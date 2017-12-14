@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Search My New Job</title>
+    <meta name="description" content="Search My New Job is a job and career opportunities search engine. Search for jobs near you and find hiring and recruiting advice.">
+    <meta name="keywords" content="jobs, employment, career, job agencies, job postings, job search engine, job opportunities">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="stylesheets/screen.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#2faadf">
+    <meta name="theme-color" content="#000000">
+    <!-- structured data -->
+    <script type="application/ld+json">
+      {
+         "@context": "http://schema.org",
+         "@type": "WebSite",
+         "url": "https://www.searchmynewjob.com",
+         "potentialAction": {
+           "@type": "SearchAction",
+           "target": "https://www.searchmynewjob.com/jobs/?q={search_term_string}&from=GoogleSearchAction",
+           "query-input": "required name=search_term_string"
+         }
+      }
+    </script>
+    <meta property="og:url" content="https://searchmynewjob.com" />
+    <meta property="og:title" content="Find Jobs Near You | Search My New Job" />
+    <meta name="twitter:title" content="Find Jobs Near You | Search My New Job">
+    <meta property="og:description" content="Search for jobs near you and find hiring and recruiting advice." />
+    <meta name="twitter:description" content="Search for jobs near you and find hiring and recruiting advice." />
+    <meta property="og:image" content="https://searchmynewjob.com/images/searchmynewjob-share.jpg" />
+    <meta name="twitter:image" content="https://searchmynewjob.com/images/searchmynewjob-share.jpg" />
+  </head>
+  <body>
+    <div class="container main theme-showcase" role="main">
+      <div class="form-nav header row">
+        <div class="header-brand"><a href="index.html">Search My New Job</a></div>
+        <div class="search-icon"><a onclick="toggleDiv()"><i class="material-icons md-48">search</i></div>
+        <div id="search-form" class="header-form ll" style="display: none;">
+          <form action="joblist.html">
+            <input type="text" placeholder="Job title or keyword">
+            <div class="btn-join">
+              <input type="text" placeholder="City or Zip">
+              <input class="btn btn-sm" type="submit" value="Go">
+            </div>
+          </form>
+        </div>
+        <ul class="map-tabs visible-xs">
+          <li class="active"><a onclick="showList(event)"><i class="material-icons">list</i> List View</a></li>
+          <li><a onclick="showMap(event)"><i class="material-icons">place</i> Map View</a></li>
+        </ul>
+      </div><!-- end header -->
+
+      <div class="row map-row">
+        <div class="col-md-4">
+          <div class="job-list">
+          <div class="job-result visible-xs">
+          <a href="http://fmstracker.com/rd/r.php?c1=&amp;c2=&amp;c3=jobspage&amp;pub=440212&amp;sid=959" target="_blank">
+          <div class="job-logo">
+          <span><img alt="Responsive Media" src="images/survey-voices.png" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+            <span class="job-company-name">CashFromHome</span>
+            <span class="job-title">Work From home Survey Taker - Earn $400+</span>
+            <span class="job-company-location">Nationwide</span>
+            </div>
+          </a>
+        </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1d79430047ec8bebc7cd1eaf7&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;RN-Medical Surgical - Travel Nursing: - RN - ORTHOPEDIC- Cost Center (614) Travel Nursing Position a...&quot;},&quot;value&quot;:0}">
+          <div class="job-logo">
+          <span><img alt="RN Network" src="https://media.glassdoor.com/o/119067/rn-network-squarelogo.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+            <span class="job-company-name">RN Network</span>
+            <span class="job-title">RN-Medical Surgical - Travel Nursing: - RN - ORTHOPEDIC...</span>
+            <span class="job-company-location">Largo, FL</span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1dd286c75abc8bebcd7142de7&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;job_loc=Clearwater%2CFL&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Travel Registered Nurse - Neonatal Intensive Care Unit - NICU - RN&quot;},&quot;value&quot;:0}">
+          <div class="job-logo">
+          <span><img alt="Travel Nurse Jobs" src="images/default.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+            <span class="job-company-name">Travel Nurse Jobs</span>
+            <span class="job-title">Travel Registered Nurse - Neonatal Intensive Care Unit - NICU - RN</span>
+            <span class="job-company-location"> Clearwater, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1d2c2543fa8c8bebc29b7a947&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Registered Nurse \/ Travel \/ ICU&quot;},&quot;value&quot;:0}">
+          <div class="job-logo">
+          <span><img alt="MAS Medical Staffing" src="https://media.glassdoor.com/o/704375/mas-medical-staffing-squarelogo-1430127324790.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">MAS Medical Staffing</span>
+          <span class="job-title">Registered Nurse / Travel / ICU</span>
+          <span class="job-company-location"> Saint Petersburg, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1d17d2055ffc8bebc1240efe7&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Medical-surgical - MedSurg RN - Travel Nurse&quot;},&quot;value&quot;:0}">
+          <div class="job-logo">
+          <span><img alt="Travel Nurse Across America" src="https://media.glassdoor.com/o/555860/travel-nurse-across-america-squarelogo-1488486359656.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">Travel Nurse Across America</span>
+          <span class="job-title">Medical-surgical - MedSurg RN - Travel Nurse</span>
+          <span class="job-company-location"> Saint Petersburg, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1dd3e8cf4d5c8bebcd67a25f7&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Med-Surg Travel RN - Medical-Surgical MS Nurse&quot;},&quot;value&quot;:0}">
+          <div class="job-logo">
+          <span><img alt="Jackson Nurse Professionals" src="https://media.glassdoor.com/o/810971/jackson-nurse-professionals-squarelogo-1432327627700.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">Jackson Nurse Professionals</span>
+          <span class="job-title">Med-Surg Travel RN - Medical-Surgical MS Nurse</span>
+          <span class="job-company-location"> Saint Petersburg, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1cb2987ff15c8bebdb70a9547&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;SEASONAL TRAVEL - RN - MEDICAL SURGICAL&quot;},&quot;value&quot;:0}">
+          <div class="mobile-job-result visible-xs">
+          <span>›</span>
+          </div>
+          <div class="job-logo">
+          <span><img alt="HealthTrust Workforce Solutions" src="https://media.glassdoor.com/o/16791/healthtrust-squarelogo.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">HealthTrust Workforce Solutions</span>
+          <span class="job-title">SEASONAL TRAVEL - RN - MEDICAL SURGICAL</span>
+          <span class="job-company-location"> St Petersburg, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1d1ccbf60b6c8bebc19591cb7&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Medical Surgical Registered Nurse&quot;},&quot;value&quot;:0}">
+          <div class="mobile-job-result visible-xs">
+          <span>›</span>
+          </div>
+          <div class="job-logo">
+          <span><img alt="Supplemental Health Care" src="https://media.glassdoor.com/o/311983/supplemental-health-care-squarelogo-1492462689494.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">Supplemental Health Care</span>
+          <span class="job-title">Medical Surgical Registered Nurse</span>
+          <span class="job-company-location"> Largo, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1dca2ff59c2c8bebccfbd1f27&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Travel RN-Dialysis Nurse - Outpatient Travel Dialysis Nurse needed for Tampa, Florida, Skill Required&quot;},&quot;value&quot;:0}">
+          <div class="mobile-job-result visible-xs">
+          <span>›</span>
+          </div>
+          <div class="job-logo">
+          <span><img alt="Foundation Medical Staffing" src="https://media.glassdoor.com/o/243563/foundation-medical-staffing-squarelogo-1487875374114.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">Foundation Medical Staffing</span>
+          <span class="job-title">Travel RN-Dialysis Nurse - Outpatient Travel Dialysis Nurse needed for Tampa, Florida, Skill Required</span>
+          <span class="job-company-location"> Tampa, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1d192a4a277c8bebc1cb8a097&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Travel Nurse - ICU RN - Intensive Care Unit Registered Nurse&quot;},&quot;value&quot;:0}">
+          <div class="mobile-job-result visible-xs">
+          <span>›</span>
+          </div>
+          <div class="job-logo">
+          <span><img alt="Adex Medical Staffing" src="https://media.glassdoor.com/o/359316/adex-medical-staffing-squarelogo-1441895059015.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">Adex Medical Staffing</span>
+          <span class="job-title">Travel Nurse - ICU RN - Intensive Care Unit Registered Nurse</span>
+          <span class="job-company-location"> Largo, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1c48f9c3c44c8bebd4d6b2977&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Travel Nurse (RN) - 13 week contract&quot;},&quot;value&quot;:0}">
+          <div class="mobile-job-result visible-xs">
+          <span>›</span>
+          </div>
+          <div class="job-logo">
+          <span><img alt="MedPro Staffing" src="https://media.glassdoor.com/o/476604/medpro-staffing-squarelogo-1429263393654.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">MedPro Staffing</span>
+          <span class="job-title">Travel Nurse (RN) - 13 week contract</span>
+          <span class="job-company-location"> Saint Petersburg, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1dc5f978084c8bebcc06b92b7&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Operating Room Nurse&quot;},&quot;value&quot;:0}">
+          <div class="mobile-job-result visible-xs">
+          <span>›</span>
+          </div>
+          <div class="job-logo">
+          <span><img alt="Countryside Surgery Center" src="images/default.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">Countryside Surgery Center</span>
+          <span class="job-title">Operating Room Nurse</span>
+          <span class="job-company-location"> Clearwater, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1d193500518c8bebc1ca7eae7&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Operating Room Nurse Manager&quot;},&quot;value&quot;:0}">
+          <div class="mobile-job-result visible-xs">
+          <span>›</span>
+          </div>
+          <div class="job-logo">
+          <span><img alt="Brandon Surgery Center" src="images/default.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">Brandon Surgery Center</span>
+          <span class="job-title">Operating Room Nurse Manager</span>
+          <span class="job-company-location"> Sydney, FL </span>
+          </div>
+        </a>
+          </div>
+          <div class="job-result">
+          <a href="http://www.jobs2careers.com/click.php?jid=1dc9d2bff5fc8bebccc405547&amp;t1=_AD&amp;ri=5781b1a0fb4ea2aad5920dec0766a90b&amp;zip_code=84043" target="_blank" class="job-link job-link-api-jobs2careers" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;RN Operating Room (Days)&quot;},&quot;value&quot;:0}">
+          <div class="mobile-job-result visible-xs">
+          <span>›</span>
+          </div>
+          <div class="job-logo">
+          <span><img alt="Largo Medical Center" src="https://media.glassdoor.com/o/121681/largo-medical-center-squarelogo.jpg" width="60" height="60"></span>
+          </div>
+          <div class="job-text">
+          <span class="job-company-name">Largo Medical Center</span>
+          <span class="job-title">RN Operating Room (Days)</span>
+          <span class="job-company-location"> Largo, FL </span>
+          </div>
+        </a>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-8 job-map">
+
+          <!-- <iframe
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPOFu7qa6TvoDH89AWKjeS3Jvh1YSp4SE
+              &q=Clearwater+FL" allowfullscreen>
+          </iframe> -->
+
+
+          <div id="map" style="width: 100%;height:100%;min-height:699px;"></div>
+              <script>
+                var map;
+                function initMap() {
+                        // Styles a map in night mode.
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                          center: {lat: 27.9506, lng: -82.4572},
+                          zoom: 12,
+                          styles: [
+                            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+                            {
+                              featureType: 'administrative.locality',
+                              elementType: 'labels.text.fill',
+                              stylers: [{color: '#d59563'}]
+                            },
+                            {
+                              featureType: 'poi',
+                              elementType: 'labels.text.fill',
+                              stylers: [{color: '#d59563'}]
+                            },
+                            {
+                              featureType: 'poi.park',
+                              elementType: 'geometry',
+                              stylers: [{color: '#263c3f'}]
+                            },
+                            {
+                              featureType: 'poi.park',
+                              elementType: 'labels.text.fill',
+                              stylers: [{color: '#6b9a76'}]
+                            },
+                            {
+                              featureType: 'road',
+                              elementType: 'geometry',
+                              stylers: [{color: '#38414e'}]
+                            },
+                            {
+                              featureType: 'road',
+                              elementType: 'geometry.stroke',
+                              stylers: [{color: '#212a37'}]
+                            },
+                            {
+                              featureType: 'road',
+                              elementType: 'labels.text.fill',
+                              stylers: [{color: '#9ca5b3'}]
+                            },
+                            {
+                              featureType: 'road.highway',
+                              elementType: 'geometry',
+                              stylers: [{color: '#746855'}]
+                            },
+                            {
+                              featureType: 'road.highway',
+                              elementType: 'geometry.stroke',
+                              stylers: [{color: '#1f2835'}]
+                            },
+                            {
+                              featureType: 'road.highway',
+                              elementType: 'labels.text.fill',
+                              stylers: [{color: '#f3d19c'}]
+                            },
+                            {
+                              featureType: 'transit',
+                              elementType: 'geometry',
+                              stylers: [{color: '#2f3948'}]
+                            },
+                            {
+                              featureType: 'transit.station',
+                              elementType: 'labels.text.fill',
+                              stylers: [{color: '#d59563'}]
+                            },
+                            {
+                              featureType: 'water',
+                              elementType: 'geometry',
+                              stylers: [{color: '#17263c'}]
+                            },
+                            {
+                              featureType: 'water',
+                              elementType: 'labels.text.fill',
+                              stylers: [{color: '#515c6d'}]
+                            },
+                            {
+                              featureType: 'water',
+                              elementType: 'labels.text.stroke',
+                              stylers: [{color: '#17263c'}]
+                            }
+                          ]
+                        });
+            var contentString = '<div class="job-result">'+
+              '<a href="form.html" target="_blank" class="job-link job-link-api-upward" data-track="{&quot;category&quot;:&quot;search-results&quot;,&quot;action&quot;:&quot;job-click&quot;,&quot;label&quot;:{&quot;utm_keyword&quot;:null,&quot;job_title&quot;:&quot;Stocker \/ Backroom \/ Receiving Associates&quot;},&quot;value&quot;:0}">'+
+              '<div class="mobile-job-result visible-xs">'+
+              '<span>›</span>'+
+              '</div>'+
+              '<div class="job-logo">'+
+              '<span><img alt="Walmart" src="https://media.glassdoor.com/o/715/walmart-squarelogo-1408483474312.jpg" width="40" height="40"></span>'+
+              '</div>'+
+              '<div class="job-text">'+
+              '<span class="job-company-name">Walmart</span>'+
+              '<span class="job-title">Stocker / Backroom / Receiving Associates</span>'+
+              '</div>'+
+              '<div class="ll"><span class="btn btn-sm">Apply</span></div>'+
+              '</a>'+
+              '</div>';
+
+                    var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                    });
+                        var tag = {
+                          path: 'M24.3,3.2c-5.4-4.3-13.3-4.3-18.7,0c-7.1,5.7-7.5,16.1-1.3,22.4c0,0,0.1,0.1,0.1,0.1l9.5,9.5c0.5,0.5,1.4,0.5,1.9,0l9.6-9.6c0,0,0.1,0,0.1-0.1C31.9,19.3,31.4,8.9,24.3,3.2z',
+                          fillColor: '#2faadf',
+                          fillOpacity: 1,
+                          strokeWeight: 0,
+                          scale: 1,
+                        };
+                        var marker = new google.maps.Marker({
+                          position: map.getCenter(),
+                          icon: tag,
+                          map: map
+                        });
+                        marker.addListener('click', function() {
+                                  infowindow.open(map, marker);
+                                });
+                      }
+              </script>
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9uIt3UpzH4j7uhmk_fQcAxONeJwFA5LE&callback=initMap"
+              async defer></script>
+        </div>
+      </div>
+
+      <div class="footer row">
+        <div class="col-sm-12">
+          <p class="disclosure">
+            <img class="footer-logo" src="images/searchmynewjob-logo.png" alt="Search My New Job Logo">
+            <br><br>
+            © 2017 Search My New Job. All Rights Reserved. All third party logos and trademarks mentioned are the property of their respective owners.
+            <br><br>
+            <a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> <!-- | <a href="">Unsubscribe</a> -->
+          </p>
+        </div>
+      </div><!-- end footer row -->
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+      function toggleDiv() {
+        $('#search-form').show();
+      }
+      function showMap(e) {
+        $('.map-tabs li').removeClass('active');
+        $(e.target).parent('li').addClass('active');
+        $('.job-list').hide();
+        $('.job-map').show();
+      }
+      function showList(e) {
+        $('.map-tabs li').removeClass('active');
+        $(e.target).parent('li').addClass('active');
+        $('.job-list').show();
+        $('.job-map').hide();
+      }
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5V57ZHD');</script>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V57ZHD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager -->
+  </body>
+</html>
