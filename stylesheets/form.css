@@ -1,297 +1,139 @@
-/* line 13, ../sass/form.sass */
-.uppercase {
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+/* line 15, ../sass/form.sass */
+.ll {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  padding: 10px;
+}
+/* line 19, ../sass/form.sass */
+.ll .pagination, .ll .alert-danger, .ll .alert-success, .ll .list-inline {
+  display: none;
+}
+/* line 22, ../sass/form.sass */
+.ll .form-header {
+  text-align: center;
+}
+/* line 25, ../sass/form.sass */
+.ll .progress {
+  height: 8px !important;
+  margin-bottom: 20px;
+}
+/* line 28, ../sass/form.sass */
+.ll .progress .progress-bar {
+  background: #2faadf;
+}
+/* line 31, ../sass/form.sass */
+.ll .form-control {
+  font-size: 16px !important;
+}
+/* line 34, ../sass/form.sass */
+.ll .has-feedback .form-control {
+  padding-right: 16px !important;
+}
+/* line 38, ../sass/form.sass */
+.ll .btn, .ll .btn-primary {
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-/* line 18, ../sass/form.sass */
-body {
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  background: white;
-  color: #444;
-  font-size: 14px;
-}
-
-/* line 24, ../sass/form.sass */
-p, ul, li {
-  color: #666;
-  line-height: 1.5em;
-}
-
-/* line 28, ../sass/form.sass */
-img {
-  max-width: 100%;
-}
-
-/* line 31, ../sass/form.sass */
-li {
-  line-height: 1.5em;
-}
-
-/* line 34, ../sass/form.sass */
-a {
-  color: #2faadf;
-  cursor: pointer;
-}
-/* line 37, ../sass/form.sass */
-a:hover {
-  color: #1d8dbe;
-  text-decoration: none;
-}
-
-/* line 41, ../sass/form.sass */
-h1 {
-  font-size: 36px;
-  font-weight: normal;
-  margin-bottom: 10px;
-}
-
-/* line 46, ../sass/form.sass */
-h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-/* line 50, ../sass/form.sass */
-h3 {
-  font-size: 21px;
-  margin-bottom: 10px;
-}
-
-/* line 54, ../sass/form.sass */
-h4 {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* line 58, ../sass/form.sass */
-select, input[type="text"] {
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-}
-
-/* line 66, ../sass/form.sass */
-.left {
-  float: left;
-}
-
-/* line 69, ../sass/form.sass */
-.container {
-  width: 100%;
-  max-width: 100%;
-  padding: 0 15px;
-}
-
-/* line 74, ../sass/form.sass */
-.container > div {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* line 79, ../sass/form.sass */
-.content > div {
-  margin-bottom: 40px;
-  clear: both;
-}
-/* line 82, ../sass/form.sass */
-.content > div:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-/* line 87, ../sass/form.sass */
-select:-moz-focusring {
-  outline: none;
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
-
-/* line 93, ../sass/form.sass */
-.header {
-  background: white;
   color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  overflow: hidden;
-}
-/* line 100, ../sass/form.sass */
-.header .header-brand a {
-  background-image: url("../images/searchmynewjob-logo.png");
-  background-repeat: no-repeat;
-  display: block;
-  float: left;
-  margin: auto;
-  width: 235px;
-  height: 33px;
-  text-indent: -999px;
-  margin-right: 10px;
-  background-size: 235px;
-}
-
-/* line 113, ../sass/form.sass */
-.form-banner {
-  padding: 20px 60px;
-  background: white url(../images/form-hero.jpg) no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  min-height: 400px;
-}
-/* line 122, ../sass/form.sass */
-.form-banner h1 {
-  color: white;
-  font-weight: normal;
-  text-align: left;
-  margin: 0;
-  font-size: 48px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-}
-
-/* line 130, ../sass/form.sass */
-.form-container {
-  background: white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 16px !important;
+  padding: 12px 30px !important;
+  background: #2faadf !important;
+  border: none !important;
   border-radius: 5px;
+  white-space: normal;
+  cursor: pointer;
+  text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
 }
-/* line 134, ../sass/form.sass */
-.form-container .form-header {
-  text-align: center;
-  background: #2faadf;
-  padding: 15px 10px;
-  border-radius: 5px 5px 0 0;
-}
-/* line 139, ../sass/form.sass */
-.form-container .form-header h2 {
+/* line 51, ../sass/form.sass */
+.ll .btn:hover, .ll .btn-primary:hover {
   color: white;
-  font-weight: normal;
-  font-size: 20px;
-  margin: 0;
+  background: #1d8dbe !important;
+  text-shadow: rgba(255, 255, 255, 0.6) 0 1px 0;
+  top: 1px;
+  position: relative;
 }
-/* line 144, ../sass/form.sass */
-.form-container .form-body {
-  padding: 20px 30px;
+/* line 58, ../sass/form.sass */
+.ll .btn-primary {
+  display: block;
+  margin: auto;
 }
-/* line 146, ../sass/form.sass */
-.form-container .form-footer {
+/* line 62, ../sass/form.sass */
+.ll .form-div {
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: 60px;
 }
-
-/* line 150, ../sass/form.sass */
-.footer {
-  clear: both;
-  overflow: auto;
-  padding: 30px 60px;
-  text-align: center;
-}
-/* line 155, ../sass/form.sass */
-.footer .footer-logo {
-  width: 235px;
-}
-/* line 157, ../sass/form.sass */
-.footer p {
-  color: #999;
+/* line 65, ../sass/form.sass */
+.ll .form-div input[type="text"], .ll .form-div input[type="email"] {
+  height: 47px;
   text-align: center;
 }
-
-/* line 164, ../sass/form.sass */
-#privacy h1 {
-  font-size: 30px;
-  color: #2faadf;
-  text-shadow: none;
-  font-weight: 500;
+/* line 70, ../sass/form.sass */
+.ll .form-div {
+  width: 100%;
 }
-/* line 169, ../sass/form.sass */
-#privacy h2 {
-  font-size: 20px;
-  color: #2faadf;
-  font-weight: 500;
-  border-bottom: 3px solid #2faadf;
-  padding-bottom: 10px;
-  margin: 20px 0 10px;
+/* line 72, ../sass/form.sass */
+.ll .form-div .control-label {
+  display: none;
+}
+/* line 74, ../sass/form.sass */
+.ll .form-div .form-control {
+  width: 60%;
+}
+/* line 77, ../sass/form.sass */
+.ll .form-div .formio-component-checkbox .control-label, .ll .form-div .formio-component-phone-cell-consent .control-label {
+  display: block;
+}
+/* line 80, ../sass/form.sass */
+.ll .checkbox input[type="checkbox"] {
+  left: 40px;
+}
+/* line 83, ../sass/form.sass */
+.ll .control-label div {
   text-align: left;
+  font-weight: lighter;
+  font-size: 12px;
+  text-indent: 20px;
 }
 
-@media (max-width: 1200px) {
-  /* line 181, ../sass/form.sass */
-  .container {
-    max-width: 100%;
+@media (min-width: 1200px) {
+  /* line 95, ../sass/form.sass */
+  .ll .form-header h1, .ll .form-header p {
+    font-size: 21px;
+  }
+  /* line 97, ../sass/form.sass */
+  .ll .form-header h2 {
+    font-size: 56px;
   }
 }
-@media (min-width: 992px) {
-  /* line 187, ../sass/form.sass */
-  .body {
-    padding: 30px;
-  }
-
-  /* line 189, ../sass/form.sass */
-  .container > div {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media (min-width: 769px) {
-  /* line 196, ../sass/form.sass */
-  .form-container {
-    margin-top: -68px;
-  }
-}
-@media (max-width: 768px) {
-  /* line 200, ../sass/form.sass */
-  .form-banner {
-    background-size: cover;
-    display: inline-block;
-    padding: 0 !important;
-  }
-  /* line 204, ../sass/form.sass */
-  .form-banner h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+@media (min-width: 481px) {
+  /* line 103, ../sass/form.sass */
+  .ll .form-div input, .ll .form-div select, .ll .form-div .btn {
+    display: block;
+    width: 60%;
+    margin: 0 auto 15px;
   }
 }
 @media (max-width: 480px) {
-  /* line 212, ../sass/form.sass */
-  .container > div {
-    padding-left: 15px;
-    padding-right: 15px;
+  /* line 112, ../sass/form.sass */
+  .ll .form-header h1 {
+    font-size: 24px;
+  }
+  /* line 114, ../sass/form.sass */
+  .ll input.form-control, .ll select.form-control {
+    display: block;
+    text-align: center;
+    width: 90% !important;
+    margin: 0 auto 15px;
+  }
+  /* line 119, ../sass/form.sass */
+  .ll .btn {
+    width: 90%;
   }
 
-  /* line 215, ../sass/form.sass */
-  .form-banner {
-    background-size: contain;
-  }
-  /* line 217, ../sass/form.sass */
-  .form-banner h1 {
-    font-size: 28px;
-  }
-
-  /* line 219, ../sass/form.sass */
-  .form-container {
-    padding: 0;
-    background-size: contain;
-    margin-bottom: 20px;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  /* line 225, ../sass/form.sass */
-  .form-container .form-body {
-    padding: 15px;
-  }
-
-  /* line 230, ../sass/form.sass */
-  #privacy h1 {
-    font-size: 28px;
-  }
-  /* line 232, ../sass/form.sass */
-  #privacy h2 {
-    font-size: 18px;
+  /* line 121, ../sass/form.sass */
+  .progress-container {
+    display: block;
+    width: 100%;
+    margin: auto;
   }
 }
